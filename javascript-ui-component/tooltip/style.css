@@ -1,0 +1,108 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    top: 50px;
+    margin-right: 50px;
+}
+
+.tooltip .tooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent 
+}
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tooltip .tooltipTextRight {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip .tooltipTextRight::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent 
+}
+
+
+.tooltip:hover .tooltipTextRight {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipTextLeft {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltipTextLeft {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltipDownbottom {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: 5px;
+}
+
+.tooltip:hover .tooltipDownbottom {
+    visibility: visible;
+    opacity: 1;
+}
