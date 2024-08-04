@@ -53,13 +53,13 @@ body {
     display: none;
     animation: moving .5s ease;
 }
-/*애니메이션의 중간 상태 기술*/
-#keyframes moving {
+@keyframes moving {  /*애니메이션의 중간 상태 기술*/
     from{
         transform: translateX(50px);
         opacity: 0;
     }to {
-        transform: translateX(50px); opacity: 1;
+        transform: translateX(0px); 
+        opacity: 1;
     }
 }
 
