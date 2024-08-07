@@ -19,12 +19,21 @@
     width: 80px;
     background-color: #12171e;
     padding: .4rem, .8rem;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
+.sidebar .top  {
+    margin-left:  20px;
+}
+
+.sidebar .top .i {
+    margin-left:  20px;
+}
+
+
 .sidebar.active ~ .main-content {
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 230px;
+    width: calc(100% + 250px);
 }
 
 .sidebar.active {
@@ -34,7 +43,7 @@
 .sidebar #btn {
     position: absolute;
     color: #fff;
-    top: .4rem;
+    top: .2rem;
     left: 100%;
     font-size: 1.2rem;
     line-height: 50px;
@@ -122,6 +131,35 @@
 
 .sidebar.active .mav-item {
     opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 6px;
+    z-index: 20%;
+    bottom:125%;    
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.sidebar ul li .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+
 }
 
 .sidebar ul li .tooltip {
