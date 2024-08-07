@@ -18,7 +18,6 @@ function addTask() {
 
 
 listContainer.addEventListener("click", function(e) {
-    alert("함수 실행됨");
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
